@@ -6,7 +6,7 @@ import InfoLanding from "@/Components/InfoLanding";
 import dynamic from "next/dynamic";
 
 export default function Beta() {
-  const DynamicNavbar = dynamic(() => import("../Components/Navbar2"), {
+  const DynamicNavbar = dynamic(() => import("./src/Components/Navbar2"), {
     ssr: false,
     loading: () => <p> Im f</p>,
   });

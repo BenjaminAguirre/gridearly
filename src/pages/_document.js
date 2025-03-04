@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="es"> 
       <Head>
+      
       </Head>
       <body>
         <Main /> 

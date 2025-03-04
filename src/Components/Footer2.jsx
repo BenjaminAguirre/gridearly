@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+
 const Footer2 = ({ scrollToContactForm }) => {
   const openIntercom = () => {
     window.Intercom("show");
@@ -26,15 +27,15 @@ const Footer2 = ({ scrollToContactForm }) => {
                 target="_blank"
                 href="https://www.linkedin.com/company/ongridrun"
               >
-                <img className="icon-redes" src={"/linkedin.png"} />
+                <Image alt="linkedinLogo" className="icon-redes" src={"/linkedin.png"} />
               </a>
 
               <a target="_blank" href="https://discord.gg/6MVnyBG3">
-                <img className="icon-redes" src={"/discord (1).png"} />
+                <Image alt="discordLogo" className="icon-redes" src={"/discord (1).png"} />
               </a>
 
               <a target="_blank" href="https://x.com/OnGridRun">
-                <img className="icon-redes" src={"/twitter.png"} />
+                <Image alt="twitterLogo" className="icon-redes" src={"/twitter.png"} />
               </a>
             </div>
           </div>

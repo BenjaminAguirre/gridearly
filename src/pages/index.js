@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Banner2 from "@/Components/Banner2";
 import BestFeaturesBeta from "@/Components/BestFeaturesBeta";
 import DeployChoiceBeta from "@/Components/DeployChoiceBeta";
@@ -6,14 +7,20 @@ import InfoLanding from "@/Components/InfoLanding";
 import dynamic from "next/dynamic";
 
 export default function Beta() {
-  const DynamicNavbar = dynamic(() => import("./src/Components/Navbar2"), {
+  const DynamicNavbar = dynamic(() => import("../Components/Navbar2"), {
     ssr: false,
-    loading: () => <p> Im f</p>,
+    loading: () => <p>Loading...</p>,
   });
 
   return (
     <div className="container-homePrincipal">
-      {" "}
+      <Head>
+        <title>Grid Beta - Focus on Building</title>
+        <meta
+          name="description"
+          content="Grid simplifies the deployment of your applications to a decentralized cloud."
+        />
+      </Head>
       <DynamicNavbar />
       <Banner2
         title="Just focus on building."

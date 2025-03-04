@@ -27,15 +27,15 @@ const Footer2 = ({ scrollToContactForm }) => {
                 target="_blank"
                 href="https://www.linkedin.com/company/ongridrun"
               >
-                <Image alt="linkedinLogo" className="icon-redes" src={"/linkedin.png"} />
+                <Image alt="linkedinLogo" className="icon-redes" src={"/linkedin.png"} width={100} height={100} />
               </a>
 
               <a target="_blank" href="https://discord.gg/6MVnyBG3">
-                <Image alt="discordLogo" className="icon-redes" src={"/discord (1).png"} />
+                <Image alt="discordLogo" className="icon-redes" src={"/discord (1).png"} width={100} height={100} />
               </a>
 
               <a target="_blank" href="https://x.com/OnGridRun">
-                <Image alt="twitterLogo" className="icon-redes" src={"/twitter.png"} />
+                <Image alt="twitterLogo" className="icon-redes" src={"/twitter.png"} width={100} height={100} />
               </a>
             </div>
           </div>
